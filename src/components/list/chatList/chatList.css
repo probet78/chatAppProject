@@ -1,0 +1,128 @@
+.chatList {
+    flex: 1;
+    overflow: scroll;
+
+}
+
+.search {
+    display: flex;
+    align-items: center; /* Vertikal rata tengah */
+    gap: 2px; /* Jarak antar elemen di dalamnya */
+    margin-top: 5px; /* Memberi sedikit ruang dari elemen di atasnya */
+    margin-left: 15px; /* Sejajarkan dengan elemen lain */
+    padding: 8px 12px; /* Memberikan ruang dalam agar lebih nyaman */
+    border-radius: 10px; /* Membuat sudut lebih halus */
+    width: 200%; /* Menghindari terlalu melebar */
+    max-width: 380px; /* Membatasi lebar maksimal */
+    background: rgba(255, 255, 255, 0.1); /* Tambahkan efek transparan */
+}
+userInfo {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.searchBar {
+    flex: 1; /* Memanfaatkan ruang yang tersedia */
+    background-color: rgba(17, 25, 40, 0.8); /* Warna latar belakang */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara ikon dan input */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 8px; /* Memberikan jarak dalam */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
+    max-width: 400px; /* Batas lebar maksimal untuk proporsional */
+}
+
+.searchBar input {
+    background-color: transparent; /* Latar belakang transparan */
+    border: none; /* Tanpa border */
+    outline: none; /* Hilangkan garis fokus */
+    color: white; /* Warna teks */
+    flex: 1; /* Isi ruang kosong */
+    font-size: 16px; /* Ukuran font */
+    font-family: Arial, sans-serif;
+}
+
+.searchBar img {
+    width: 20px; /* Ukuran ikon pencarian */
+    height: 20px;
+}
+
+.add {
+    width: 36px; /* Ukuran tombol tambah */
+    height: 36px;
+    background-color: rgba(17, 25, 40, 0.8);
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.profile {
+    display: flex;
+    align-items: center; /* Vertikal rata tengah */
+    gap: 10px; /* Jarak antara lingkaran profil dan teks */
+}
+
+.profile img {
+    width: 40px; /* Ukuran lingkaran "A" */
+    height: 40px;
+    border-radius: 50%; /* Membuat lingkaran sempurna */
+}
+
+.profile .name {
+    font-size: 18px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold; /* Tulisan John Doe lebih menonjol */
+}
+
+@media (max-width: 768px) {
+    .search {
+        margin-left: 10px; /* Kurangi margin kiri di layar kecil */
+        gap: 5px; /* Jarak antar elemen lebih kecil */
+    }
+
+    .searchBar {
+        max-width: 300px; /* Batas lebar lebih kecil di layar sempit */
+    }
+
+    .add {
+        width: 30px; /* Ukuran tombol tambah lebih kecil */
+        height: 30px;
+    }
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #dddddd35;
+
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .texts{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        span{
+            font-weight: 500;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 30;
+        }
+    }
+}
